@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #c0bac5, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 400px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    
+        form div {
+            margin-bottom: 15px;
+            position: relative;
+        }
+    
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+    
+        input, select, button {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+            transition: 0.3s ease-in-out;
+        }
+    
+        input[type="email"],
+        input[type="password"],
+        select {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus {
+            box-shadow: 0 0 8px #6a11cb;
+        }
+    
+        button {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        button:hover {
+            background: linear-gradient(45deg, #2575fc, #6a11cb);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        select {
+            cursor: pointer;
+        }
+    
+        ::placeholder {
+            color: #aaa;
+        }
+    
+        form div:last-child {
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>forms used in htmls</h1>
+    <form action="https//google.com">
+<div>
+      <label for="email">email</label>
+<input id="email" type="email" placeholder="enter email here">
+</div>
+<div>
+    <label for="password">Password</label>
+    <input id=" password"type="password" placeholder="enter your password here">
+</div>
+<div>
+    <label for="games">games that you like</label>
+    <select  id="games">
+        <option value="mobile games">pubg</option>
+        <option value="mobile games">freefire</option>
+        <option value="mobile games">call of duty</option>
+        <option value="mobile games">mobile legends bang bang</option>
+        <option value="outdoor games">football</option>
+        <option value="outdoor games">basketball</option>
+        <option value="outdoor games">vollyball</option>
+    </select>
+</div>
+<div>
+    <button>submit</button>
+    
+</div>
+
+
+
+    </form>
+</body>
+</html>
